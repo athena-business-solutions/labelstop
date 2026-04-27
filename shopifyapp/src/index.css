@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --shopify-green: #008060;
+  --shopify-green-hover: #006e52;
+  --shopify-bg: #f6f6f7;
+  --shopify-sidebar-bg: #1a1a2e;
+  --shopify-sidebar-text: #ffffff;
+  --shopify-sidebar-active: rgba(255, 255, 255, 0.15);
+  --shopify-card-bg: #ffffff;
+  --shopify-text-primary: #202223;
+  --shopify-text-secondary: #6d7175;
+  --shopify-border: #e1e3e5;
+  --shopify-red: #d72c0d;
+  --shopify-yellow: #ffc453;
+  --shopify-blue: #006fbb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  color: var(--shopify-text-primary);
+  background: var(--shopify-bg);
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: 14px;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.card {
+  border: 1px solid var(--shopify-border);
+  border-radius: 8px;
+  background: var(--shopify-card-bg);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.focus-ring {
+  @apply focus:outline-none focus:ring-2 focus:ring-shopify-green focus:ring-offset-1;
+}
