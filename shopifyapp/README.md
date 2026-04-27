@@ -50,3 +50,5 @@ Detail endpoints should return:
 ## Backend Connection
 
 Set `REACT_APP_API_BASE_URL` to your backend URL. The app already calls the requested dashboard, orders, products, customers, and analytics endpoints through `src/services/api.js`.
+
+hello
